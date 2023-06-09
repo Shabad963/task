@@ -1,28 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:hidoc/responsive/responsive_layout.dart';
-import 'package:hidoc/view/articles_view_mobile.dart';
-
-import 'view/articles_view_web.dart';
+import 'package:flutter_application_3/first_screen.dart';
+import 'package:flutter_application_3/second_screen.dart';
+import 'package:flutter_application_3/third_screen.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Hidoc',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: ResponsiveLayout(
-          mobileScreenLayout: ArticlesViewMobile(),
-          webScreenLayout: ArticlesViewWeb(),
-        ));
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+
+        primarySwatch: Colors.blue,
+      ),
+      home: const SecondScreen(),
+    );
   }
 }
+
+
+
+

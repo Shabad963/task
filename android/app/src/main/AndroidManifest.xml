@@ -1,9 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hidoc">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    package="com.example.flutter_application_3">
    <application
-        android:label="hidoc"
+        android:label="flutter_application_3"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
